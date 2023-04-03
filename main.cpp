@@ -1,6 +1,3 @@
-#include <iostream>
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
+//
+// Created by 배승준 on 2023/04/03.
+//
