@@ -18,12 +18,26 @@ public:
 
     }
 
+    NameCard(const NameCard &N){
+        name = new char[strlen(N.name)+1];
+        phone = new char[strlen(N.phone)+1];
+        address=new char[strlen(N.address)+1];
+        position = new char[strlen(N.position)+1];
+
+        strcpy(name,N.name);
+        strcpy(phone,N.phone);
+        strcpy(address,N.address);
+        strcpy(position,N.position);
+
+        cout<<"복사생성!"<<endl;
+    }
+
     ~NameCard(){
         delete []name;
         delete []phone;
         delete []address;
         delete []position;
-        cout<<"생성자 소멸"<<endl;
+        cout<<"소멸 완성"<<endl;
     }
 
 
@@ -42,7 +56,11 @@ public:
 
 
 int main(){
-    NameCard Lee("Lee ji sun" , "333-3333" , "www.naes.sdsd","missonary");
+    NameCard Lee("Lee ji sun" , "333-3333" , "freelec","manager");
+    NameCard Lee2(Lee);
     Lee.ShowData();
+    cout<<"Lee Showdata() 출력 완료"<<endl;
+    Lee2.ShowData();
+    cout<<"Lee2 Showdata() 출력 완료"<<endl;
     return 0;
 }
