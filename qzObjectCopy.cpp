@@ -31,21 +31,31 @@ public:
     {
         delete []name;
         delete []major;
+
+        cout<<"~Student"<<endl;
     }
     void showData(){
         cout<<"(" <<id << ","<<name<<","<<major<<")"<<endl;
 
     }
+
+
 };
 
 int main(){
-    Student s1(1234,"홍길동","Computer Engineering");
+    //Student s1(1234,"홍길동","Computer Engineering");
+    Student *ps1 = new Student(1234,"홍길동","Computer Engineering");// 포인터와 heap 저장소를 이용하여 생성
     cout<<"원래객체 = "; // 생각하지 못함
-    s1.showData();
+    ps1->showData();
+    //s1.showData();
 
-    Student s2 = s1;
+    //Student s2 = s1;
+    Student s2(*ps1);
+
     cout<<"복사객체 ="; // 생각X
     s2.showData();
+    s2.~Student();
+    delete ps1;
 
     return 0;
 

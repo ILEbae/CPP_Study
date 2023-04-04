@@ -4,7 +4,7 @@ class Account{
 protected: // << 상속관계에서 주로 쓰임.
 
     char accNum[10];
-    int balance;
+    int balanc
 
 public:
     Account(char *num,int bal){
