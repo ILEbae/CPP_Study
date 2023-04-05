@@ -3,7 +3,7 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled main.cpp Test.cpp Practice2.1.cpp main.cpp UsingNameSpace_use.cpp 2.4_ex.cpp 2.5_ex.cpp 2.6_ex.cpp 2.10_ex.cpp  cmake-build-debug/Time_ex.cpp Time_ex.cpp Namecard.ex.cpp 2.14_ex.cpp Time_ex.cpp Time_ex.cpp 2.15_ex.cpp 2.16_ex.cpp qzObjectCopy.cpp Test2.cpp Test2.cpp student.cpp 2.17_ex.cpp)
+add_executable(untitled main.cpp Test.cpp Practice2.1.cpp main.cpp UsingNameSpace_use.cpp 2.4_ex.cpp 2.5_ex.cpp 2.6_ex.cpp 2.10_ex.cpp  cmake-build-debug/Time_ex.cpp Time_ex.cpp Namecard.ex.cpp 2.14_ex.cpp Time_ex.cpp Time_ex.cpp 2.15_ex.cpp 2.16_ex.cpp qzObjectCopy.cpp Test2.cpp Test2.cpp student.cpp 2.17_ex.cpp BusClass.cpp)
 add_compile_definitions(LOCAL_DEBUG)
 add_executable(Practice2.1 Practice2.1.cpp cmake-build-debug/Time_ex.cpp)
 add_executable(Test Test.cpp)
@@ -22,3 +22,4 @@ add_executable(Test2 Test2.cpp Test2.cpp)
 add_executable(2.11_ex main.cpp Student.cpp Test2.cpp)
 
 add_executable(2.17_ex 2.17_ex.cpp)
+add_executable(BusClass BusClass.cpp)
